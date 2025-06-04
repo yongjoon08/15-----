@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나무심기 기부자 명단</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    h1 { text-align: center; margin-bottom: 20px; }
+    ul { padding: 0; max-width: 400px; margin: auto; }
+    li {
+      list-style: none;
+      padding: 8px 12px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>15기 나무심기 기부자 명단</h1>
+  <ul id="donorList">
+    <!-- JavaScript가 여기에 기부자 이름을 채워 넣을 거예요. -->
+  </ul>
+
+  <script>
+    // 1) 이 배열에 기부자 이름을 원하는 만큼 추가해 보세요.
+    const donors = [
+      '김철수',
+      '이영희',
+      '박민준',
+      '최수빈'
+    ];
+    // 2) 아래 코드는 donors 배열 안의 이름을 화면에 <li> 요소로 하나씩 그려주는 역할입니다.
+    const ul = document.getElementById('donorList');
+    donors.forEach(function(name) {
+      const li = document.createElement('li');
+      li.textContent = name;
+      ul.appendChild(li);
+    });
+  </script>
+</body>
+</html>
