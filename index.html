@@ -24,9 +24,12 @@
   </style>
 </head>
 <body>
-  <h1>15기 나무심기 기부자 명단</h1>
+  <h1>
+    15기 나무심기 프로젝트<br>
+    기부자 
+  </h1>
+
   <ul id="donorList">
-    <!-- JavaScript가 여기에 기부자 이름을 채워 넣을 거예요. -->
   </ul>
 
   <div class="footer">
@@ -36,7 +39,6 @@
   </div>
 
   <script>
-    // 1) 이 배열에 기부자 이름을 원하는 만큼 추가해 보세요.
     const donors = [
     '강명우',
     '고준',
@@ -112,7 +114,6 @@
     '윤서진 선생님',
     '이정환 선생님'
     ];
-    // 2) 아래 코드는 donors 배열 안의 이름을 화면에 <li> 요소로 하나씩 그려주는 역할입니다.
     const ul = document.getElementById('donorList');
     donors.forEach(function(name) {
       const li = document.createElement('li');
