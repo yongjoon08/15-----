@@ -13,6 +13,14 @@
       padding: 8px 12px;
       border-bottom: 1px solid #ddd;
     }
+    .footer {
+      max-width: 400px;
+      margin: 40px auto 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .footer p { margin: 4px 0; }
   </style>
 </head>
 <body>
@@ -20,6 +28,12 @@
   <ul id="donorList">
     <!-- JavaScript가 여기에 기부자 이름을 채워 넣을 거예요. -->
   </ul>
+
+  <div class="footer">
+    <h2>프로젝트 진행자</h2>
+    <p>이강우 · 조용준</p>
+    <p>2024. 1학년 8반 일동</p>
+  </div>
 
   <script>
     // 1) 이 배열에 기부자 이름을 원하는 만큼 추가해 보세요.
@@ -96,7 +110,7 @@
     '황희선',
     '강다영 선생님',
     '윤서진 선생님',
-    '이정환 선생님님'
+    '이정환 선생님'
     ];
     // 2) 아래 코드는 donors 배열 안의 이름을 화면에 <li> 요소로 하나씩 그려주는 역할입니다.
     const ul = document.getElementById('donorList');
